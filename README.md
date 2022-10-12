@@ -1,6 +1,6 @@
 ![alt tag](https://raw.githubusercontent.com/philzet/ColorPick.js/master/demo/colorpick-splash.png?token=ALMWaIz-dwolfOXaNQN_dKqgIH5vLglNks5YjJj9wA%3D%3D)
 
-# ColorPick.js
+# ColorPick.js 
 
 ColorPick.js is a simple and minimal jQuery color picker plugin for the modern web.
 
