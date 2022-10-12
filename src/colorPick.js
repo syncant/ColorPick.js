@@ -7,6 +7,7 @@
 * Licensed under the MIT License
 *
 */
+
 (function( $ ) {
 
     $.fn.colorPick = function(config) {
@@ -70,9 +71,15 @@
 				}
 
                 var offset = $(self.element).offset();
-
+                var width = $(self.element).width();
+                var left = event.pageX - offset.left;
                 event.preventDefault();
-                self.show(self.element, event.pageX - offset.left, event.pageY - offset.top);
+                if(window.innerWidth < event.pageX+170)
+                {
+                    left = left -170;
+                }
+                
+                self.show(self.element, left, event.pageY - offset.top);
 
                 $('.customColorHash').val(self.color);
 
